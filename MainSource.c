@@ -15,11 +15,11 @@ main() // Procédure principal + autre forme de commentaire
 	//system("pause");
 
 
-	printf("\t\t\t\t\t\tDebut du programme\n\n");
-	printf("====================\n");
-	printf("= Merci et a bientot =\n");
-	printf("====================\n\n");
-	printf("\t\t\t\t\t\tDebut du programme\n\n");
+	printf("\t\t\t\tDebut du programme\n\n");
+	printf("\t====================\n");
+	printf("\t= Merci et a bientot =\n");
+	printf("\t====================\n\n");
+	printf("\t\t\t\tDebut du programme\n\n");
 
 	system("pause");
 }
