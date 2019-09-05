@@ -19,7 +19,7 @@ main() // Procédure principal + autre forme de commentaire
 	printf("\t====================\n");
 	printf("\t= Merci et a bientot =\n");
 	printf("\t====================\n\n");
-	printf("\t\t\t\tDebut du programme\n\n");
+	printf("\t\t\t\tFin du programme\n\n");
 
 	system("pause");
 }
