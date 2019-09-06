@@ -15,7 +15,7 @@ int z;
 float t;
 
 // Var temp
-int temp;
+float temp;
 
 
 
