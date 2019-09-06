@@ -10,21 +10,47 @@
 /* Declaration des variables */
 
 int a;
-//int b;
+int b;
+int c;
+int temp;
 
 
 
 
 main() // Procédure principal + autre forme de commentaire
 {
-	// Calcule de A
-	a = 1;
-	//printf("contenu de la variable a = %d", a ,"\n");
+	system("cls");
+	// Valeur A
 	printf("Saisir la valeur de a ");
 	scanf("%d", &a);
-	a = a + 5;
-	system("color F");
-	printf("Valeur de a = %d\n", a);
+	system("cls");
 
+	// Valeur B
+	printf("Saisir la valeur de b ");
+	scanf("%d", &b);
+	system("cls");
+
+
+	// Affichage des varaiable avant permutation
+	printf("== Avant de permuter ==");
+	printf("\n\nLa valeur de A est = %d", a);
+	printf("\nLa valeur de B est = %d", b);
+	printf("\n\n==============\n");
+	system("pause");
+	
+	// Permutation
+	temp = b;
+	b = a;
+	a = temp;
+
+	// Affichage du résultat
+	system("cls");
+	printf("==============\n\n");
+	printf("La valeur de A est = %d", a);
+	printf("\nLa valeur de B est = %d", b);
+	printf("\n\n==============\n");
+
+
+	// pause de l'affichage
 	system("pause");
 }
