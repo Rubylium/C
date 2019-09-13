@@ -13,7 +13,7 @@ float tauxMensuel;
 
 main() {
 	system("cls");
-	printf("Saisir le capital emprunté (100 000)\n");
+	printf("Saisir le capital emprunte (100 000)\n");
 	scanf("%d", &capitalU);
 
 	// Clear du CMD
@@ -25,7 +25,7 @@ main() {
 	// Clear du CMD
 	system("cls");
 
-	printf("Saisir le bombre d'année de remboursement\n");
+	printf("Saisir le nombre d'annee de remboursement\n");
 	scanf("%d", &anne);
 
 
@@ -33,9 +33,9 @@ main() {
 
 	tauxMensuel = (tauxAnnuel/12)/100;
 	calcule1 = capitalU * tauxMensuel;
-	calcule2 = pow(1+tauxMensuel, anne*12)/pow(1+tauxMensuel, anne*12)-1;
+	calcule2 = pow(1+tauxMensuel, anne*12)/(pow(1+tauxMensuel, anne*12)-1);
 	calcule3 = calcule1*calcule2;
 
-	printf("Mensualité: %f\n", calcule3);
+	printf("Mensualite: %f\n", calcule3);
 	system("pause");
 }
