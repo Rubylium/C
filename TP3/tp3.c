@@ -1,22 +1,41 @@
 # include <stdio.h>
 # include <stdlib.h>
+# include <math.h>
 
 
-int Nom;
-int salBrut;
-int salNet;
-int salTotal;
-float ca;
-int commission;
-
+int capitalU;
+int anne;
+float calcule1;
+float calcule2;
+float calcule3;
+float tauxAnnuel;
+float tauxMensuel;
 
 main() {
 	system("cls");
-	printf("Saisir le capital emprunt�");
-	scanf("%d", &salBrut);
+	printf("Saisir le capital emprunté (100 000)\n");
+	scanf("%d", &capitalU);
 
 	// Clear du CMD
 	system("cls");
 
-	
+	printf("Saisir le taux annuel (4.5)\n");
+	scanf("%f", &tauxAnnuel);
+
+	// Clear du CMD
+	system("cls");
+
+	printf("Saisir le bombre d'année de remboursement\n");
+	scanf("%d", &anne);
+
+
+	// El Calculo
+
+	tauxMensuel = (tauxAnnuel/12)/100;
+	calcule1 = capitalU * tauxMensuel;
+	calcule2 = pow(1+tauxMensuel, anne*12)/pow(1+tauxMensuel, anne*12)-1;
+	calcule3 = calcule1*calcule2;
+
+	printf("Mensualité: %f\n", calcule3);
+	system("pause");
 }
