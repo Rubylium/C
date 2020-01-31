@@ -1,38 +1,73 @@
 # include <stdio.h>
 # include <stdlib.h>
+# include <string.h>
 
 
-int Nom;
-int salBrut;
-int salNet;
-int salTotal;
-float ca;
-int commission;
-
-// salaire brute 1000 chiffre affaire 10000
+char client[20];
+int NomFacture;
+char date[20];
+int TxRemise;
+char ref1[50], ref2[50];
+char disign1[10], disign2[10];
+int qte1, qte2;
+float pxu1, pxu2;
+float montant1, montant2;
+float remise;
+float NetAPayer;
 
 
 main() {
 
 	system("cls");
-	printf("Saisir le salaire brute (1000) ");
-	scanf("%d", &salBrut);
+	printf("Saisir le nom du client");
+	scanf("%s", &client);
 
 	system("cls");
-
-	printf("Saisir le chiffre d'affaire ( 10000 )");
-	scanf("%f", &ca);
-
+	printf("Saisir le num de la facture");
+	scanf("%d", &NomFacture);
+	system("cls");
+	
+	system("cls");
+	printf("Saisir la date de la facture");
+	scanf("%s", &date);
 	system("cls");
 
+	system("cls");
+	printf("Saisir la remise de la facture");
+	scanf("%d", &TxRemise);
+	system("cls");
+
+	system("cls");
+	printf("Saisir la remise de la facture");
+	scanf("%d", &TxRemise);
+	system("cls");
+
+	system("cls");
+	printf("Saisir la 1er référence");
+	scanf("%s", &ref1);
+	system("cls");
+
+	system("cls");
+	printf("Saisir la 2eme référence");
+	scanf("%s", &ref2);
+	system("cls");
+
+	system("cls");
+	printf("Saisir la quantité de la première référence");
+	scanf("%d", &qte1);
+	system("cls");
+
+	system("cls");
+	printf("Saisir la quantité de la deuxième référence");
+	scanf("%d", &qte2);
+	system("cls");
+
+	system("cls");
+	printf("Saisir la quantité de la deuxième référence");
+	scanf("%d", &qte2);
+	system("cls");
+	
 	// Calcule 
 
-	salNet = salBrut * 0.8;
-	commission = ca * 1.1 - ca;
-	salTotal = salNet + commission;
-
-	printf("\tSalaire net: %d\n ", salNet);
-	printf("\tCommission sur CA: %d\n ", commission);
-	printf("\tSalaire total: %d\n ", salTotal);
 	system("pause");
 }
